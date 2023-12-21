@@ -30,7 +30,8 @@ http://localhost:8080/api/v1/addGame
 ```
 
 ## Send Game List to the email
-Create a `config.properties` file at `/resources` folder with the following content:
+Go to `myaccount.google.com/apppasswords` and create an new app password.
+Then create a `config.properties` file at `/resources` folder with the following content:
 
 ```
 ext.mail.username=CHANGEME@gmail.com
