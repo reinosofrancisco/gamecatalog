@@ -28,3 +28,12 @@ curl --header "Content-Type: application/json" \
 --data '{"name":"SOTC","genre":"Adventure","platform":"PS2","releaseDate":"2005-10-18","imgUrl":"nopath_yet","developer":"Team Ico","publisher":"sony"}' \
 http://localhost:8080/api/v1/addGame
 ```
+
+## Send Game List to the email
+Create a `config.properties` file at `/resources` folder with the following content:
+
+```
+ext.mail.username=CHANGEME@gmail.com
+ext.mail.password=CHANGEME
+```
+

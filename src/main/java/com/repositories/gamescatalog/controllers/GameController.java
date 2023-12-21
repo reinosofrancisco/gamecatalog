@@ -41,4 +41,9 @@ public class GameController {
 	public Game saveGame(@RequestBody Game game) {
 		return gameService.saveGame(game);
 	}
+
+	@GetMapping("/sendHelloEmail")
+	public String sendHelloEmail() {
+		return gameService.sendHelloEmail();
+	}
 }

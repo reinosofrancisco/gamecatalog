@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.repositories.gamescatalog.models.Game;
 
 @Repository
-public interface GameRepository extends JpaRepository<Game, Long> { //Maybe CrudRepository?
+public interface GameRepository extends JpaRepository<Game, Long> {
 
 }
