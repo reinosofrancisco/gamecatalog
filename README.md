@@ -38,3 +38,18 @@ ext.mail.username=CHANGEME@gmail.com
 ext.mail.password=CHANGEME
 ```
 
+## Security
+Default password is 123456. Email is uninportant but mandatory.
+```bash
+curl --header "Content-Type: application/json" \                             francisco@francisco-B450-AORUS-M 16:04:51 --request POST \
+--data '{"email":"test@test.com","password":"123456"}' \
+http://localhost:8080/rest/auth/login
+```
+
+Use the JWT Token obtained to access the endpoints.
+Replace with your token
+```bash
+curl -H 'Accept: application/json' \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiZXhwIjoxOTIwNDgwOTcwfQ.gdRt4jr3ADWILY1wI3nXFVHTO7KF3SjO7q2EBDGJI4Q" \
+localhost:8080/api/v1/games
+```
