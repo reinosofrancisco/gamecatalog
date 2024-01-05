@@ -7,5 +7,5 @@ import com.repositories.gamescatalog.models.Game;
 
 @Repository
 public interface GameRepository extends JpaRepository<Game, Long> {
-
+	//JpaRepository will provide basic CRUD operations
 }
